@@ -1,0 +1,28 @@
+package javaLearning;
+
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int age_in_five;
+		int year = Calendar.getInstance().get(Calendar.YEAR);
+
+		System.out.println("How old are you? ");
+		age_in_five = (keyboard.nextInt() + 5);
+		
+		keyboard.close();
+		
+		System.out.printf("You will be %d in five years!", age_in_five);
+	}
+
+}
