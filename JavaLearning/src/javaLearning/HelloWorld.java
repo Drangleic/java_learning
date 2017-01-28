@@ -1,5 +1,8 @@
 package javaLearning;
 
+import java.util.Scanner;
+import java.util.Calendar;
+
 public class HelloWorld {
 
 	/**
@@ -8,6 +11,18 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World!");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int age_next_president;
+		int year = Calendar.getInstance().get(Calendar.YEAR);
+
+		System.out.println("How old are you? ");
+		age_next_president = (keyboard.nextInt() + (2025 - year));
+		
+		keyboard.close();
+		
+		System.out.printf("You will be %d in when the next POTUS is in office!", age_next_president);
 	}
 
 }
